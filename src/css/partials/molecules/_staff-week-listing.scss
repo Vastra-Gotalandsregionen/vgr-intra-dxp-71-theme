@@ -1,0 +1,47 @@
+.staff-week-listing {
+
+  > h2 {
+    margin-top: 0;
+  }
+
+  .staff-week-item {
+
+    .staff-week-item-inner {
+      border-top: 1px solid $vgrintra-mercury;
+      padding: 1.0em 0.5em;
+    }
+
+    &:last-child {
+      .staff-week-item-inner {
+        border-bottom: 1px solid $vgrintra-mercury;
+      }
+    }
+
+    .staff-week-item-heading {
+      color: $vgrintra-yellow;
+      font-size: 1.0em;
+      font-weight: bold;
+    }
+
+    .staff-week-item-summary {
+    }
+
+    > a {
+      color: $text-color;
+      display: block;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+
+        .staff-week-item-inner {
+          background-color: $vgrintra-wildsand;
+        }
+      }
+    }
+
+
+
+  }
+
+}

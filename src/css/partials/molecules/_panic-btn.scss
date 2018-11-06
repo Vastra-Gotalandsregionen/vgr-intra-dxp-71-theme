@@ -1,0 +1,25 @@
+.panic-btn {
+
+  color: $vgrintra-red;
+  background: url(../images/theme/icons/panic.png) center left no-repeat;
+  display: inline-block;
+  font-size: 1.0em;
+  height: 28px;
+  line-height: 28px;
+  margin: 7px 0 0 0;
+  padding: 0 0 0 34px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:visited {
+    color: $vgrintra-red;
+  }
+
+  &:hover {
+    color: $vgrintra-red;
+    text-decoration: none;
+  }
+
+  span {}
+}

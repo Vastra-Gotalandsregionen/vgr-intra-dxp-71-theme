@@ -1,0 +1,145 @@
+.content-box {
+  border: 1px solid $vgrintra-mercury;
+  margin: 0;
+  padding: 0 1em 1em 1em;
+  position: relative;
+
+  @include border-radius(2px);
+  @include box-sizing('border-box');
+
+  > h2 {
+    background: $vgrintra-mercury;
+    border: none;
+    border-left: 7px solid $vgrintra-yellow;
+    color: $vgrintra-tundora;
+    font-size: 1.1em;
+    margin: 0 -1em 0 -1em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    @include border-radius(2px 2px 0 0);
+  }
+
+  .content-box-bd {
+
+    padding-top: 1em;
+    position: relative;
+
+    .entry-item {
+
+      @include pie-clearfix();
+
+      padding: 0;
+      margin: 0.7em 0;
+
+      a {
+        color: $text-color;
+        display: block;
+        text-decoration: none;
+
+        @include pie-clearfix();
+
+        &:hover {
+          background: $vgrintra-wildsand;
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+
+      .entry-date {
+        float: left;
+        line-height: 1.0;
+        width: 50px;
+
+        .entry-date-inner {
+          background: $vgrintra-wildsand;
+          color: $vgrintra-buddhagold;
+          font-weight: normal;
+          padding: 10px;
+          text-align: center;
+
+          .entry-date-month {
+            font-size: 0.8em;
+            text-transform: uppercase;
+          }
+
+          .entry-date-day {
+            font-size: 1.1em;
+          }
+
+        }
+
+      }
+
+      .entry-content {
+        margin-left: 60px;
+        padding: 0;
+
+        h3 {
+          margin: 0 0 0.2em 0;
+        }
+
+        .time,
+        .place {
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  .more-link-wrap {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+  }
+
+  &.content-box-simple {
+      border: none;
+  }
+
+  &.content-box-wide {
+    .entry-item {
+
+      border: 1px solid $vgrintra-wildsand;
+      @include border-radius(3px);
+
+      .entry-date {
+        .entry-date-inner {
+          min-height: 60px;
+          @include border-radius(3px 0 0 3px);
+        }
+      }
+
+      .entry-content {
+        margin-left: 50px;
+        padding: 10px 10px;
+      }
+    }
+  }
+
+}
+
+.columns-intra-2-4-a {
+
+  .row-2 {
+    .span3 {
+      .content-box {
+        @include small {
+          min-height: 550px;
+        }
+
+        &.we-are-vgr {
+          min-height: auto;
+        }
+      }
+
+    }
+  }
+}

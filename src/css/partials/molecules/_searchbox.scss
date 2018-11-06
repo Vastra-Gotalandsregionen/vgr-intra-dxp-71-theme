@@ -1,0 +1,59 @@
+.searchbox {
+
+  display: inline-block;
+
+  @include small {
+    display: block;
+    float: right;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+
+    position: relative;
+  }
+
+
+  form {
+    margin: 0.5em 1.0em;
+    padding: 0;
+
+    @include small {
+      margin: 0;
+    }
+  }
+
+  input[type="text"],
+  .btn {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  input[type="text"] {
+    border: none;
+    height: 32px;
+    max-width: 160px;
+    padding: 0.2em;
+
+    @include small {
+      max-width: 100%;
+    }
+  }
+
+  .btn {
+    background: $vgrintra-emperor;
+    border: 1px solid $vgrintra-emperor;
+    color: $vgrintra-white;
+    margin-left: 3px;
+    margin-top: 0;
+    width: auto;
+    //padding: 4px 6px;
+    padding: 0.4em 1.2em;
+
+
+    @include small {
+      margin-top: 0;
+      //padding: 11px 19px;
+      //padding: 4px 6px;
+    }
+  }
+
+}

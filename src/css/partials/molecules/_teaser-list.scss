@@ -1,0 +1,55 @@
+
+.teaser-entry {
+  color: $vgrintra-tundora;
+  display: block;
+  text-decoration: none;
+  @include pie-clearfix();
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .teaser-image {
+
+    float: left;
+    width: 70px;
+
+    img {
+      background: $vgrintra-yellow url(../images/theme/logo/vgr-triangle-white.png) center center no-repeat;
+
+      width: 100%;
+      @include border-radius(6px);
+    }
+  }
+
+  .teaser-content {
+    margin-left: 80px;
+
+    h3 {
+      color: $vgrintra-tundora;
+      font-size: 1.1em;
+      font-weight: normal;
+      margin: 0;
+
+    }
+
+    .date {
+      color: $vgrintra-boulder;
+      font-size: 0.8em;
+    }
+
+  }
+
+  .link-wrap {
+    text-align: right;
+  }
+
+  .fake-link {
+    color: $link-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}

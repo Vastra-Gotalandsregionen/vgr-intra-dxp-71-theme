@@ -1,0 +1,86 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	a {
+		color: $heading-color;
+		text-decoration: none;
+
+		&:visited {
+			color: $heading-color;
+		}
+
+		&:hover {
+			color: $link-hover-color;
+		}
+
+		&:active {
+			color: $link-hover-color;
+		}
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:visited {
+		color: $link-color;
+	}
+
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: underline;
+	}
+
+	&:active {
+		color: $link-hover-color;
+	}
+}
+
+
+
+// Remove underline from all Liferay links
+// --------
+.lfr-meta-actions,
+.lfr-admin-panel,
+.article-form,
+.yui3-widget-bd,
+.lfr-search-container,
+.btn-group,
+.dropdown-menu,
+.nav-tabs {
+	a {
+		text-decoration: none;
+	}
+}
+
+/*
+
+*/
+
+.portlet-journal-content {
+	.portlet-content {
+
+		/*
+		a {
+			color: $vgrintra-mineshaft;
+			border-bottom: 1px dotted $vgrintra-mineshaft;
+			display: inline-block;
+			line-height: 1.0;
+			text-decoration: none;
+
+
+			&:hover {
+				color: $vgrintra-black;
+				border-bottom-style: solid;
+				text-decoration: none;
+			}
+
+		}
+		*/
+
+	}
+}

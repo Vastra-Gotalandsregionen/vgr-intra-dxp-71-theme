@@ -1,0 +1,84 @@
+// Colors
+$block-navigation-bg: $vgrintra-white;
+$block-navigation-border-hover: $vgrintra-yellow;
+$block-navigation-title-color: $vgrintra-yellow;
+$block-navigation-text-color: $vgrintra-mineshaft;
+$block-navigation-border-color: $vgrintra-mineshaft;
+
+// Sizes
+$block-navigation-item-height: 200px;
+
+.block-navigation {
+
+  @include pie-clearfix();
+
+  .block-navigation-item {
+
+    @include small {
+      float: left;
+      width: 33%;
+    }
+
+    > a {
+      background: $vgrintra-white;
+      border: 1px solid $vgrintra-mercury;
+      color: $block-navigation-text-color;
+      display: block;
+      height: 180px;
+      margin-bottom: 1em;
+      margin-right: 1em;
+      overflow: hidden;
+      padding: 1em;
+      text-decoration: none;
+      @include border-radius(3px);
+      @include pie-clearfix();
+      @include word-break(normal);
+
+      .title {
+        background: $vgrintra-mercury;
+        color: $vgrintra-tundora;
+        font-size: 1.1em;
+        margin: -1em -1em 1em -1em;
+        padding: 0.5em;
+        text-align: center;
+        text-transform: uppercase;
+        @include border-radius(2px 2px 0 0);
+      }
+
+      .img-wrap {
+        float: left;
+        padding-top: 0.35em;
+        width: 27%;
+
+        img {
+          width: 100%;
+          @include filter(grayscale(100%));
+        }
+      }
+
+      .description {
+        margin-left: 32%;
+      }
+
+      &:hover {
+        border-color: $block-navigation-border-hover;
+        text-decoration: none;
+
+        .title {
+          background: $vgrintra-yellow;
+          color: $vgrintra-white;
+        }
+
+        .img-wrap {
+          img {
+            @include filter(grayscale(0%));
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+}

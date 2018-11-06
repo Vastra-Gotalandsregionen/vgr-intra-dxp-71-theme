@@ -1,0 +1,31 @@
+.staff-week {
+
+  .intro {
+
+    background: $vgrintra-wildsand;
+    border: 1px solid $vgrintra-mercury;
+    @include pie-clearfix();
+    padding: 1.0em;
+
+    .image {
+
+      float: left;
+      width: 100px;
+
+      img {
+        //border: 1px solid $vgrintra-alto;
+        width: 90%;
+      }
+    }
+
+    .summary {
+      margin-left: 100px;
+    }
+
+  }
+
+  .content {
+    margin-top: 1.0em;
+  }
+
+}

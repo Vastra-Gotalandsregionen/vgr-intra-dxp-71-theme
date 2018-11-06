@@ -1,0 +1,222 @@
+.news-box {
+
+  background: $vgrintra-wildsand;
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  @include clearfix();
+
+  > h1 {
+    background: $vgrintra-emperor;
+    color: $vgrintra-white;
+    font-size: 1.1em;
+    line-height: 1.0;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  .news-featured-wrap {
+
+    overflow: hidden;
+
+    @include small {
+      float: left;
+      height: 300px;
+      width: 64.5%;
+    }
+
+    .news-featured {
+      display: block;
+      max-height: 300px;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      @include small {
+
+      }
+
+
+      .news-info {
+        background: $vgrintra-tundora;
+        background: rgba($vgrintra-tundora, 0.9);
+        bottom: 10px;
+        color: $vgrintra-white;
+        left: 10px;
+        margin: 0;
+        padding: 0.5em;
+        position: absolute;
+
+        .news-info-date {
+          font-size: 0.9em;
+          display: block;
+        }
+
+        .news-info-title {
+          display: block;
+          font-size: 1.5em;
+        }
+
+      }
+
+    }
+
+  }
+
+  .news-listed-wrap {
+
+    @include small {
+      float: right;
+      width: 35%;
+    }
+
+    .news-listed-item {
+      background: transparent;
+      border-bottom: 1px solid $vgrintra-mercury;
+      color: $vgrintra-tundora;
+      display: block;
+      padding: 0.5em;
+      text-decoration: none;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .news-item-date {
+        font-size: 0.9em;
+      }
+
+      &:hover {
+        background: $vgrintra-mercury;
+      }
+
+    }
+
+  }
+
+  .news-items {
+    @include pie-clearfix();
+
+    .news-item {
+
+      > a {
+        border-width: 0 1px 1px 1px;
+        border: 1px solid $vgrintra-alto;
+        color: $text-color;
+        display: block;
+        padding: 0.5em;
+        text-decoration: none;
+
+        padding: 0;
+
+        &:hover {
+          background-color: $vgrintra-mercury;
+          text-decoration: none;
+        }
+      }
+
+      .news-item-inner {
+        background: transparent url(../images/theme/news/allmant-okat.png) 0.5em 50% no-repeat;
+        padding: 1.2em 1.2em 1.2em 5.2em;
+      }
+
+      @include small {
+        float: left;
+        width: 50%;
+        @include box-sizing(border-box);
+
+        .news-item-inner {
+          height: 80px;
+          overflow: hidden;
+        }
+      }
+
+      &.news-item-akut .news-item-inner { background-image: url(../images/theme/news/akut.png); }
+      &.news-item-allmant-okat .news-item-inner { background-image: url(../images/theme/news/allmant-okat.png); }
+      &.news-item-ekonomi .news-item-inner { background-image: url(../images/theme/news/ekonomi.png); }
+      &.news-item-folkhalsa .news-item-inner { background-image: url(../images/theme/news/folkhalsa.png); }
+      &.news-item-forskning .news-item-inner { background-image: url(../images/theme/news/forskning.png); }
+      &.news-item-fouu .news-item-inner { background-image: url(../images/theme/news/fouu.png); }
+      &.news-item-handelser .news-item-inner { background-image: url(../images/theme/news/handelser.png); }
+      &.news-item-human-rights .news-item-inner { background-image: url(../images/theme/news/human-rights.png); }
+      &.news-item-it-telefoni .news-item-inner { background-image: url(../images/theme/news/it-telefoni.png); }
+      &.news-item-miljo .news-item-inner { background-image: url(../images/theme/news/miljo.png); }
+      &.news-item-nyans .news-item-inner { background-image: url(../images/theme/news/nyans.png); }
+      &.news-item-patientvard-sakerhet .news-item-inner { background-image: url(../images/theme/news/patientvard-sakerhet.png); }
+      &.news-item-personal .news-item-inner { background-image: url(../images/theme/news/personal.png); }
+      &.news-item-sakerhet-pers-lokal .news-item-inner { background-image: url(../images/theme/news/sakerhet-pers-lokal.png); }
+      &.news-item-utveckling .news-item-inner { background-image: url(../images/theme/news/utveckling.png); }
+      &.news-item-vgr .news-item-inner { background-image: url(../images/theme/news/vgr.png); }
+
+      // Every even
+      &:nth-child(2n) {
+        > a {
+          border-left-color: transparent;
+        }
+      }
+
+      .news-item-date {
+        color: $vgrintra-graydove;
+      }
+
+      .news-item-heading {
+        //color: $vgrintra-graydove;
+      }
+
+      .news-item-summary {
+        display: none;
+      }
+
+
+
+      // First two
+      &:first-child,
+      &:first-child + .news-item {
+        .news-item-inner {
+          //background-color: $vgrintra-white;
+          //height: 130px;
+        }
+
+        .news-item-heading {
+          //color: $vgrintra-graydove;
+          //font-weight: bold;
+        }
+
+        .news-item-summary {
+          //display: block;
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+  .more-link {
+    color: $vgrintra-white;
+    line-height: 1.0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}

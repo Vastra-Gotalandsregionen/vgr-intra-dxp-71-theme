@@ -1,0 +1,27 @@
+#breadcrumbs {
+  .breadcrumb {
+    background: transparent;
+    margin: -0.5em 0 1.0em 0;
+    padding: 0 15px;
+
+    li {
+      line-height: 1.0;
+
+      a,
+      span,
+      .divider {
+        line-height: 1.0;
+      }
+
+      a {
+        color: $vgrintra-graydove;
+      }
+
+      .divider {
+        color: $vgrintra-graydove;
+      }
+
+    }
+
+  }
+}

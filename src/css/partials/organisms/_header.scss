@@ -1,0 +1,152 @@
+
+#banner {
+	@include pie-clearfix();
+
+	background: $vgrintra-white;
+
+	#topBar {
+		background: $vgrintra-yellow;
+
+		//@include background(linear-gradient(to bottom right, #ec8a00, #f6ab04));
+
+		padding: 0.7em 0;
+		@include pie-clearfix();
+
+		.portlet {
+			background: transparent;
+			padding: 0;
+		}
+
+		.logo-vgr {
+			display: block;
+			text-align: center;
+
+			@include small {
+				float: left;
+				position: relative;
+				text-align: left;
+			}
+
+			img {
+				max-width: 150px;
+				width: 100%;
+
+				@include small {
+
+					max-width: 100%;
+				}
+			}
+		}
+
+		.top-bar-tools {
+			display: block;
+			text-align: center;
+
+			@include small {
+				float: right;
+				position: relative;
+				text-align: left;
+			}
+
+			.portlet-boundary {
+				margin-bottom: 0;
+			}
+
+			.top-bar-navigation {
+				display: block;
+				margin: 0.5em 0;
+				text-align: center;
+
+				@include small {
+					display: inline-block;
+					margin: 0;
+					text-align: left;
+				}
+			}
+
+			.portlet-journal-content {
+				display: inline-block;
+
+				// Hide portlet bar
+				.portlet-borderless-bar {
+					display: none;
+				}
+
+				// Hide edit controls
+				.lfr-meta-actions {
+					display: none;
+				}
+
+			}
+
+			[class^="icon-"],
+			[class*=" icon-"] {
+				color: $vgrintra-white;
+			}
+
+			a {
+				border-right: 1px solid $vgrintra-white;
+				color: $vgrintra-white;
+				display: inline-block;
+				line-height: 1.0;
+				margin: 0 10px 0 0;
+				padding: 0 10px 0 0;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+				&.signin,
+				&.signout {
+					border-right: 0;
+					margin-right: 0;
+					padding-right: 0;
+				}
+
+			}
+
+			ul.navigation-list {
+				li {
+					display: inline-block;
+					margin: 0;
+				}
+			}
+
+		}
+
+	}
+
+	#navBar {
+		border-bottom: 1px solid $vgrintra-mercury;
+		padding: 0.2em 0 0 0;
+		position: relative;
+		@include pie-clearfix();
+
+		.row-fluid {
+			position: relative;
+		}
+
+		.tools-wrap {
+			display: block;
+			padding: 0;
+			@include pie-clearfix();
+
+			@include small {
+				float: right;
+				width: 15%;
+			}
+		}
+
+		.navigation-wrap {
+			margin: 0;
+			padding: 0;
+
+			@include small {
+				margin: 0 15%;
+			}
+		}
+
+	}
+
+}

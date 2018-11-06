@@ -1,0 +1,46 @@
+.staff-week-box {
+
+  &.content-box {
+    .content-box-bd {
+      padding-bottom: 2em;
+    }
+  }
+  
+  .content-box-bd {
+
+    //line-height: 22px;
+
+    > a {
+      color: $text-color;
+      display: block;
+      text-decoration: none;
+
+      .fake-link {
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+
+      }
+
+      .img-wrap {
+
+        img {
+          display: block;
+          float: none;
+          margin: 0 auto;
+          max-width: 80%;
+          width: 80%;
+          text-align: center;
+        }
+      }
+
+    }
+
+  }
+}

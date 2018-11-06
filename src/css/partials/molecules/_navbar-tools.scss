@@ -1,0 +1,24 @@
+.navbar-tools {
+
+  float: right;
+  position: relative;
+
+  @include pie-clearfix();
+
+  .navbar-tools-item {
+    float: left;
+    position: relative;
+
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+}

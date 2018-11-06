@@ -1,0 +1,19 @@
+blockquote {
+	margin: 0;
+	padding: 0;
+	border: none;
+	@include trailer(1);
+
+	.author,
+	.author-title {
+		
+	}
+
+	.author-title {
+		@include paragraph-lesser();
+	}
+}
+
+blockquote p {
+	@include paragraph-large();
+}

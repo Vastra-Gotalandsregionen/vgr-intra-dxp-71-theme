@@ -1,0 +1,228 @@
+
+// .main-navigation {
+//   .sub-menu {
+
+//     position: absolute;
+//     left: 0;
+//     top: 100%;
+//     width: 100%;
+//     z-index: 2;
+
+//     .mega-drop {
+//       background: $vgrintra-white;
+//       border-top: 1px solid $vgrintra-alto;
+//       margin: 0 1em;
+//       display: none;
+//       position: absolute;
+//       text-align: left;
+//       top: -1px;
+//       width: 100%;
+//       @include clearfix(); // Needed for everything but Chrome
+//     	clear: both; // Needed for everything but Chrome
+
+//       @include medium {
+//         margin: 0;
+//         @include single-box-shadow(rgba(0, 0, 0, 0.2), $default-box-shadow-h-offset, 40px, 40px, $default-box-shadow-spread, $default-box-shadow-inset);
+//       }
+
+//       &.on {
+//         display: block;
+//       }
+
+//       .inner {
+//         @include medium {
+//           padding: 10px 0;
+//         }
+//       }
+
+//       ul {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         @include clearfix();
+//         text-align: center;
+
+//         li {
+//           display: inline;
+
+//           a {
+//             color: $vgrintra-tundora;
+//             display: inline-block;
+//             height: 3.0em;
+//             line-height: 3.0em;
+//             padding: 0 2.0em;
+//             text-decoration: none;
+
+//             &:hover {
+//               text-decoration: underline;
+//             }
+//           }
+
+//         }
+
+//       }
+
+
+//     }
+//   }
+// }
+
+
+.main-navigation {
+
+  position: relative;
+
+    // For development
+    > ul {
+      > li:nth-child(2) {
+        .sub-menu-new {
+          .mega-drop {
+            //display: block;
+          }
+        }
+      }
+    }
+
+  // Move to partial main-navigation if used in production
+  > ul {
+    > li {
+      &.on {
+        > a {
+          background: $vgrintra-mercury;
+        }
+      }
+    }
+  }
+
+
+
+  .sub-menu-new {
+
+
+    @include small {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      z-index: 2;
+    }
+
+
+    .mega-drop {
+
+      display: none;
+
+      @include small {
+
+        background: $vgrintra-mercury;
+        border-top: 1px solid $vgrintra-alto;
+        margin: 0;
+        display: none;
+        position: absolute;
+        text-align: left;
+        top: -1px;
+        width: 100%;
+        @include clearfix();
+        clear: both;
+        @include single-box-shadow(rgba(0, 0, 0, 0.2), $default-box-shadow-h-offset, 40px, 40px, $default-box-shadow-spread, $default-box-shadow-inset);
+      }
+
+      &.on {
+        display: block;
+      }
+
+      .inner {
+
+        @include small {
+          background: $vgrintra-white;
+          margin: 1.0em;
+          padding: 1.0em;
+        }
+
+      }
+
+      .row-fluid {
+
+        margin: 0;
+        padding: 0;
+
+        @include small {
+          .col {
+            margin: 0;
+            width: 33.3333%;
+          }
+
+          .col-inner {
+            padding: 0 0.5em;
+
+          }
+
+          .col1,
+          .col2 {
+            .col-inner {
+              border-right: 1px solid $vgrintra-graydusty;
+            }
+          }
+
+        }
+
+
+      }
+
+      .child-nav-item {
+        display: block;
+
+        a {
+          border-bottom: 1px dashed $vgrintra-silver;
+          color: $vgrintra-tundora;
+          display: block;
+          padding: 0.4em 0.7em;
+          text-decoration: none;
+
+          &:hover {
+            background: $vgrintra-mercury;
+            text-decoration: none;
+          }
+        }
+
+        &:last-child {
+          a {
+            border-bottom: none;
+          }
+        }
+
+      }
+
+
+    }
+
+  }
+
+  > ul {
+    > li.selected {
+      .sub-menu-new {
+        .mega-drop {
+          display: block;
+
+          @include small {
+            display: none;
+
+            &.on {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#navigation {
+  .mega-drop {
+    .row,
+    .row:first-child {
+      display: flex;
+    }
+  }
+}

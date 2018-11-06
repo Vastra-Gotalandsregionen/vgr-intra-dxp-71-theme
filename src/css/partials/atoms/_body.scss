@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $bg;
+  color: $text-color;
+	font-family: 'Lato', Helvetica, sans-serif;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+	margin: 0;
+	padding: 0;
+	@include word-break(break-all);
+
+	&.font-large {
+		font-size: 18px;
+	}
+
+	&.font-xlarge {
+		font-size: 20px;
+	}
+
+	// Move to new atom file
+	.portlet-dockbar {
+		margin-bottom: 0;
+	}
+
+  // Testing
+  //background: black;
+
+  @include xsmall {
+    //background: red;
+  }
+
+  // Testing
+  @include small {
+    //background: blue;
+  }
+
+  // Testing
+  @include medium {
+    //background: green;
+  }
+
+}
+
+html.ie {
+	body {
+		@include word-break(keep-all);
+
+	}
+}

@@ -1,0 +1,17 @@
+.content-box {
+  &.puff-box {
+
+    > h2 {
+      background: $vgrintra-yellow;
+      border-bottom: 0;
+      color: $vgrintra-white;
+      margin: -1em -1em 0.5em -1em;
+      padding: 5px 10px;
+    }
+
+    .link-button {
+      display: block;
+    }
+
+  }
+}

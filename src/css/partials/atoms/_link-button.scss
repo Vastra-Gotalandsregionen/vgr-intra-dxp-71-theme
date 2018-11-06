@@ -1,0 +1,42 @@
+.link-button {
+  background: $vgrintra-yellow;
+  color: $vgrintra-white;
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  margin-left: 5px;
+  text-decoration: none;
+
+  &:visited {
+    color: $vgrintra-white;
+  }
+
+  &:hover {
+    background: tint($vgrintra-yellow, 10%);
+    color: $vgrintra-white;
+    text-decoration: none;
+  }
+
+  &.link-button-secondary {
+    background: $vgrintra-alto;
+    color: $vgrintra-mineshaft;
+
+    &:hover {
+      background: tint($vgrintra-alto, 10%);
+      color: $vgrintra-mineshaft;
+    }
+
+  }
+
+  &.link-button-icon {
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+
+    padding: 0.4em 0.6em 0.4em 33px;
+
+    &.link-button-icon-login {
+      background-image: url(../images/theme/icons/padlock-white.png);
+    }
+
+  }
+
+}

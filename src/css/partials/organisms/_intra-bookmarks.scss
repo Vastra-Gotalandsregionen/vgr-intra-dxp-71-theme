@@ -1,0 +1,126 @@
+.intra-bookmarks-portlet {
+
+  .portlet {
+    background: $vgrintra-yellow;
+  }
+
+  .portlet-inner-title {
+    color: $vgrintra-white;
+  }
+
+  form,
+  .ui-panel,
+  .ui-panel-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bookmarks-add-wrap {
+    color: $vgrintra-white;
+    text-align: right;
+
+    a {
+      color: $vgrintra-white;
+    }
+  }
+
+  .bookmark-items {
+    background: $vgrintra-white;
+    padding: 0.6em;
+
+    .bookmark-item {
+      padding: 0.5em 0;
+
+      .bookmark-title-wrap {
+        @include pie-clearfix();
+
+        .bookmark-title-toggle,
+        .bookmark-title-content {
+          display: block;
+        }
+
+        .bookmark-title-toggle {
+          background: transparent url(../images/arrows/05_right.png) left center no-repeat;
+          float: left;
+          font-size: 0;
+          min-height: 14px;
+          text-indent: -9999em;
+          width: 10px;
+          margin-right: 5px;
+          @include opacity(0.8);
+        }
+
+        .bookmark-title-content {
+          @include ellipsis();
+        }
+
+        .bookmark-controls {
+          float: right;
+          margin-left: 5px;
+          position: relative;
+        }
+
+      }
+
+      .bookmark-controls {
+
+        display: none;
+        text-align: right;
+        @include pie-clearfix();
+
+        a {
+          color: $vgrintra-mineshaft;
+          margin-left: 5px;
+          text-decoration: none;
+          @include opacity(0.7);
+
+          &:hover {
+            text-decoration: none;
+            @include opacity(1.0);
+          }
+
+          .text-label {
+            font-size: 0;
+            text-indent: -9990em;
+          }
+        }
+
+      }
+
+      .bookmark-more-info {
+        display: none;
+        padding-left: 15px;
+
+        p {
+          margin: 0 0 0.5em 0;
+          word-wrap: break-word;
+          //@include ellipsis();
+        }
+      }
+
+      &.bookmark-item-maximized {
+        .bookmark-title-toggle {
+          background-image: url(../images/arrows/05_down.png);
+        }
+
+        .bookmark-controls {
+          display: block;
+        }
+
+        .bookmark-more-info {
+          display: block;
+        }
+      }
+
+    }
+
+  }
+
+  .add-bookmark-form {
+    background: $vgrintra-white;
+    padding: 0.6em;
+  }
+
+
+
+}

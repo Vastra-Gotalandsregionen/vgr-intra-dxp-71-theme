@@ -1,0 +1,28 @@
+.contacts-listing {
+
+  .contact {
+    border-bottom: 1px solid $vgrintra-mercury;
+
+    margin: 5px 0;
+    padding: 5px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .contact-name {
+      color: $vgrintra-mineshaft;
+      font-weight: bold;
+      font-size: 1.1em;
+      font-weight: normal;
+    }
+
+  }
+
+}

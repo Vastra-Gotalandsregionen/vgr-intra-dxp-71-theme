@@ -1,0 +1,63 @@
+.ifeed-parsed-wrap {
+
+  .ifeed-parsed-container {
+
+    margin-bottom: 0.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+
+    .ifeed-parsed-content {
+
+      &.loading {
+        background: url(../images/progress_bar/loading_animation.gif) center center no-repeat;
+        min-height: 30px;
+      }
+
+    }
+
+    &.ifeed-parsed-collapsible {
+
+      border: 1px solid $vgrintra-mercury;
+      @include border-radius(2px);
+
+      > h3 {
+        cursor: pointer;
+        font-size: 1.0em;
+        margin: 0;
+        padding: 8px 10px;
+
+        span {
+          background: transparent url(../images/theme/icons/icon-plus.png) left center no-repeat;
+          display: block;
+          padding-left: 20px;
+        }
+
+
+        &.ifeed-parsed-title-expanded,
+        &.ifeed-parsed-title-expanded:hover {
+          background: $vgrintra-yellow;
+          color: #fff;
+
+          span {
+            background-image: url(../images/theme/icons/icon-minus-white.png);
+          }
+        }
+
+      }
+
+      .ifeed-parsed-content {
+        padding: 9px 15px;
+      }
+
+
+
+
+
+    }
+
+  }
+
+}

@@ -1,90 +1,9 @@
-
-// .main-navigation {
-//   .sub-menu {
-
-//     position: absolute;
-//     left: 0;
-//     top: 100%;
-//     width: 100%;
-//     z-index: 2;
-
-//     .mega-drop {
-//       background: $vgrintra-white;
-//       border-top: 1px solid $vgrintra-alto;
-//       margin: 0 1em;
-//       display: none;
-//       position: absolute;
-//       text-align: left;
-//       top: -1px;
-//       width: 100%;
-//       @include clearfix(); // Needed for everything but Chrome
-//     	clear: both; // Needed for everything but Chrome
-
-//       @include medium {
-//         margin: 0;
-//         @include single-box-shadow(rgba(0, 0, 0, 0.2), $default-box-shadow-h-offset, 40px, 40px, $default-box-shadow-spread, $default-box-shadow-inset);
-//       }
-
-//       &.on {
-//         display: block;
-//       }
-
-//       .inner {
-//         @include medium {
-//           padding: 10px 0;
-//         }
-//       }
-
-//       ul {
-//         list-style: none;
-//         margin: 0;
-//         padding: 0;
-//         @include clearfix();
-//         text-align: center;
-
-//         li {
-//           display: inline;
-
-//           a {
-//             color: $vgrintra-tundora;
-//             display: inline-block;
-//             height: 3.0em;
-//             line-height: 3.0em;
-//             padding: 0 2.0em;
-//             text-decoration: none;
-
-//             &:hover {
-//               text-decoration: underline;
-//             }
-//           }
-
-//         }
-
-//       }
-
-
-//     }
-//   }
-// }
-
-
 .main-navigation {
 
   position: relative;
 
-    // For development
-    > ul {
-      > li:nth-child(2) {
-        .sub-menu-new {
-          .mega-drop {
-            //display: block;
-          }
-        }
-      }
-    }
-
   // Move to partial main-navigation if used in production
-  > ul {
+  .main-navigation-list {
     > li {
       &.on {
         > a {

@@ -1,4 +1,4 @@
-<form method="get" action="${search_layout_friendly_url}">
+<form method="get" action="${search_url}">
 
 	<input class="field" id="p_p_id" name="p_p_id" type="hidden" value="com_liferay_portal_search_web_portlet_SearchPortlet">
 	<input class="field" id="p_p_lifecycle" name="p_p_lifecycle" type="hidden" value="0">

@@ -28,6 +28,15 @@ This file allows you to override and define new FreeMarker variables.
 
 <#assign search_layout_friendly_url = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Group", "CUSTOM_FIELDS", "vgr-intra-search-layout-friendly-url", group_id, "")  />
 
+<#------ Search Layout ----------------------------------------------------------------------------------------------------------------->
+
+<#assign search_url = "" />
+<#assign searchLayout = layoutLocalService.fetchLayoutByFriendlyURL(group_id, layout.isPrivateLayout(), search_layout_friendly_url)! />
+
+<#if searchLayout?has_content>
+	<#assign search_url = portalUtil.getLayoutURL(searchLayout, theme_display) />
+</#if>
+
 <#------ Theme Settings ----------------------------------------------------------------------------------------------------------------->
 
 <#assign show_search = false />

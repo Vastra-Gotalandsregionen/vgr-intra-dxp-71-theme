@@ -17,5 +17,8 @@
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
 		</portlet-decorator>
+		<settings>
+			<setting key="show-search" value="true" configurable="true" type="checkbox" />
+		</settings>
 	</theme>
 </look-and-feel>

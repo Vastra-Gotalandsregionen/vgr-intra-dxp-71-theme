@@ -1,7 +1,7 @@
 <footer id="footer" role="contentinfo">
   <div class="footer-inner">
-    <div class="container-normal">
-      <div class="row-fluid">
+    <div class="container">
+      <div class="row">
         <div class="col-md-4">
 
           <#if footer_col_1_article_id?has_content>

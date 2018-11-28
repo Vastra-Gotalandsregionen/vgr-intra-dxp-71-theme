@@ -289,54 +289,54 @@
 		display: none;
 	}
 
-	.entry-navigation {
-		background: none;
-		border: none;
-		border-top: 1px solid $vgrintra-mercury;
-		margin: 10px 0;
-		padding: 10px;
-
-		@include pie-clearfix();
-
-		span {
-			display: block;
-			visibility: hidden;
-
-			&.previous {}
-			&.next {}
-		}
-
-		a {
-			background-color: $vgrintra-mercury;
-			background-repeat: no-repeat;
-			color: $vgrintra-mineshaft;
-			display: inline-block;
-			padding: 3px 6px;
-			text-decoration: none;
-			@include border-radius(4px);
-
-			&:hover {
-				background-color: $vgrintra-alto;
-				color: $vgrintra-black;
-				text-decoration: none;
-			}
-
-			&.previous {
-				background-image: url(../images/arrows/05_left.png);
-				background-position: left center;
-				float: left;
-				padding-left: 15px;
-			}
-
-			&.next {
-				background-image: url(../images/arrows/05_right.png);
-				background-position: right center;
-				float: right;
-				padding-right: 15px;
-			}
-		}
-
-	}
+	// .entry-navigation {
+	// 	background: none;
+	// 	border: none;
+	// 	border-top: 1px solid $vgrintra-mercury;
+	// 	margin: 10px 0;
+	// 	padding: 10px;
+	//
+	// 	@include pie-clearfix();
+	//
+	// 	span {
+	// 		display: block;
+	// 		visibility: hidden;
+	//
+	// 		&.previous {}
+	// 		&.next {}
+	// 	}
+	//
+	// 	a {
+	// 		background-color: $vgrintra-mercury;
+	// 		background-repeat: no-repeat;
+	// 		color: $vgrintra-mineshaft;
+	// 		display: inline-block;
+	// 		padding: 3px 6px;
+	// 		text-decoration: none;
+	// 		@include border-radius(4px);
+	//
+	// 		&:hover {
+	// 			background-color: $vgrintra-alto;
+	// 			color: $vgrintra-black;
+	// 			text-decoration: none;
+	// 		}
+	//
+	// 		&.previous {
+	// 			background-image: url(../images/arrows/05_left.png);
+	// 			background-position: left center;
+	// 			float: left;
+	// 			padding-left: 15px;
+	// 		}
+	//
+	// 		&.next {
+	// 			background-image: url(../images/arrows/05_right.png);
+	// 			background-position: right center;
+	// 			float: right;
+	// 			padding-right: 15px;
+	// 		}
+	// 	}
+	//
+	// }
 
 	#blogsCommentsPanelContainer {
 		margin-bottom: 0;

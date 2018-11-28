@@ -1,0 +1,177 @@
+.portlet-blogs {
+
+  .col-md-8 {
+    flex: none;
+    max-width: 100%;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .widget-mode-simple {
+
+    margin-top: 0;
+
+    .widget-mode-simple-entry {
+      border-bottom: 1px dotted #bfbfbf;
+      padding: 1em 0;
+      margin: 1em 0;
+
+      &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    .widget-topbar {
+      h3 {
+        margin: 0;
+      }
+    }
+
+    .widget-metadata {
+
+      margin: 0 0 10px 0;
+
+      .inline-item-before {
+        display: none;
+      }
+
+      .username {
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+          color: $text-color;
+          cursor: none;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+
+  .widget-mode-detail {
+    padding-top: 0;
+
+    .widget-mode-detail-header {
+      .col-md-8 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .title {
+      font-size: 2.28571em;
+      line-height: 1.25;
+    }
+
+    .widget-metadata {
+      margin: 10px 0;
+
+      .inline-item-before {
+        display: none;
+      }
+
+      .username {
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+          color: $text-color;
+          cursor: none;
+          text-decoration: none;
+        }
+      }
+
+    }
+
+    .widget-mode-detail-text {
+      margin-top: 0;
+
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+    }
+
+  }
+
+  .widget-mode-card {
+
+    .widget-metadata {
+
+      margin: 0;
+
+      .inline-item-before {
+        display: none;
+      }
+
+      .username {
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+          color: $text-color;
+          cursor: none;
+          text-decoration: none;
+        }
+      }
+
+    }
+
+    .card-footer {
+      display: none;
+    }
+
+  }
+
+  .entry-navigation {
+    padding: 10px 0;
+    flex: none;
+    max-width: 100%;
+
+    .card {
+
+      .card-body {
+        padding: 0.75rem;
+      }
+
+      h3 {
+        font-size: 1.1em;
+        line-height: 1.5;
+        font-weight: normal;
+      }
+
+      .widget-metadata {
+        .username {
+          color: $text-color;
+          text-decoration: none;
+          &:hover {
+            color: $text-color;
+            cursor: none;
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .portlet-body {
+    > .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+}
+
+// Hide visible interaction when admin controls are closed
+.custom-admin-controls-closed {
+  .portlet-blogs:hover,
+  .portlet-blogs.open {
+    .visible-interaction {
+      display: none;
+    }
+  }
+}

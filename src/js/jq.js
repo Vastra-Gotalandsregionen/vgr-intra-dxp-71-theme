@@ -101,10 +101,7 @@
     var feedContentNode = $(feedContainer).find('.ifeed-parsed-content');
     var titleNode = $(feedContainer).find('.ifeed-parsed-title');
 
-    var hasTitleNode = false;
-    if(titleNode) {
-      hasTitleNode = true;
-    }
+    var hasTitleNode = (titleNode.length > 0);
 
     if(hasTitleNode && (displayType == 'collapsible-open' || displayType == 'collapsible-closed') ) {
 
@@ -124,13 +121,11 @@
 
   function ifeedJsonpSuccessCallback(json, feedContainer, templateNode) {
 
-    console.log('ifeedJsonpSuccessCallback');
-
     var templateNodeContent = templateNode.html();
     var template = Handlebars.compile(templateNodeContent);
-    //
+
     var feedContentNode = $(feedContainer).find('.ifeed-parsed-content');
-    //
+
     feedContentNode.html(template(json));
 
     setupIfeedDisplayTypes(feedContainer);

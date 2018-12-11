@@ -87,11 +87,9 @@
 		<div id="navBar">
 			<div class="container-normal">
 
-					<#--
 					<div class="tools-wrap">
 						<#include "${full_templates_path}/nav_bar_tools.ftl" />
 					</div>
-					-->
 
 					<div class="navigation-wrap">
 						<#if has_navigation || is_signed_in>
@@ -100,8 +98,6 @@
 					</div>
 			</div>
 		</div>
-
-
 
 	</header>
 

@@ -47,7 +47,17 @@ This file allows you to override and define new FreeMarker variables.
 	<#assign show_search = true />
 </#if>
 
+<#-- Favorites -->
 
+<#assign use_favorites_quickadd = false />
+
+<#assign theme_setting_show_favorites_quickadd = theme_display.getThemeSetting("show-favorites-quickadd")! />
+
+<#if theme_setting_show_favorites_quickadd = "true">
+	<#assign use_favorites_quickadd = true />
+</#if>
+
+<#assign favorites_quickadd_portlet_id = "favoritesquickadd_WAR_oppnaprogramfavoritesportlet" />
 
 <#------ Links ----------------------------------------------------------------------------------------------------------------->
 

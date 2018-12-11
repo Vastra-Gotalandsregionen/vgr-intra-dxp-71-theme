@@ -19,6 +19,7 @@
 		</portlet-decorator>
 		<settings>
 			<setting key="show-search" value="true" configurable="true" type="checkbox" />
+			<setting key="show-favorites-quickadd" value="true" configurable="true" type="checkbox" />
 		</settings>
 	</theme>
 </look-and-feel>

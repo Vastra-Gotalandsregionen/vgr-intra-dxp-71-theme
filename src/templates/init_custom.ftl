@@ -82,7 +82,7 @@ This file allows you to override and define new FreeMarker variables.
 
     <@liferay_portlet["runtime"]
         defaultPreferences = "${freeMarkerPortletPreferences}"
-        instanceId = "${instance_id}"
+        instanceId = instance_id
         portletName = "com_liferay_journal_content_web_portlet_JournalContentPortlet"
     />
 
@@ -93,14 +93,16 @@ This file allows you to override and define new FreeMarker variables.
 	</#if>
 </#macro>
 
-<#--
-<#macro includePortlet portlet_id>
+<#macro includePortlet portlet_id instance_id>
 
-		${freeMarkerPortletPreferences.reset()}
+	<#assign VOID = freeMarkerPortletPreferences.reset() />
+	<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />
 
-		${freeMarkerPortletPreferences.setValue("portletSetupShowBorders","false")}
+	<@liferay_portlet["runtime"]
+			defaultPreferences = "${freeMarkerPortletPreferences}"
+			instanceId = instance_id
+			portletName = portlet_id
+	/>
 
-		${theme.runtime(portlet_id, "", freeMarkerPortletPreferences)}
-		${freeMarkerPortletPreferences.reset()}
+	<#assign VOID = freeMarkerPortletPreferences.reset() />
 </#macro>
--->

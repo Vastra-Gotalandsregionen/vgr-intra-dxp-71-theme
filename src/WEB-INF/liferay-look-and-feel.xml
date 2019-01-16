@@ -5,8 +5,12 @@
 	<compatibility>
 		<version>7.1.0+</version>
 	</compatibility>
-	<theme id="vgr-intra-dxp-71-theme" name="VGR Intra DXP 71 Theme">
+	<theme id="vgr-intra-theme" name="VGR Intra DXP Theme">
 		<template-extension>ftl</template-extension>
+		<settings>
+			<setting key="show-search" value="true" configurable="true" type="checkbox" />
+			<setting key="show-favorites-quickadd" value="true" configurable="true" type="checkbox" />
+		</settings>
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
 		</portlet-decorator>
@@ -17,9 +21,5 @@
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
 		</portlet-decorator>
-		<settings>
-			<setting key="show-search" value="true" configurable="true" type="checkbox" />
-			<setting key="show-favorites-quickadd" value="true" configurable="true" type="checkbox" />
-		</settings>
 	</theme>
 </look-and-feel>

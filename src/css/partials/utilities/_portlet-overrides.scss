@@ -183,7 +183,9 @@
 		.portlet-body {
 			// Same as taglib-header in 6.2
 			.h2 {
-				display: none;
+				// Rule commented out, will hide also edit icon.
+				// Logic instead moved to vgr-toggle-control-menu-theme-contributor module
+				//display: none;
 			}
 		}
 	}

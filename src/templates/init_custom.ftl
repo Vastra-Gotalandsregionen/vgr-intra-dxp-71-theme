@@ -75,18 +75,13 @@ This file allows you to override and define new FreeMarker variables.
 		<#local instance_id = "wcd" + article_id + portlet_instance_suffix />
 		<#local instance_id = instance_id?substring(0, 12) />
 
-    <#assign VOID = freeMarkerPortletPreferences.reset() />
-    <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />
-    <#assign VOID = freeMarkerPortletPreferences.setValue("groupId", group_id?c) />
-    <#assign VOID = freeMarkerPortletPreferences.setValue("articleId", article_id) />
+		<#assign wcdPortletPreferencesMap = {"articleId": article_id,"groupId": group_id?c,"portletSetupPortletDecoratorId": "barebone"} />
 
     <@liferay_portlet["runtime"]
-        defaultPreferences = "${freeMarkerPortletPreferences}"
+        defaultPreferences = freeMarkerPortletPreferences.getPreferences(wcdPortletPreferencesMap)
         instanceId = instance_id
         portletName = "com_liferay_journal_content_web_portlet_JournalContentPortlet"
     />
-
-    <#assign VOID = freeMarkerPortletPreferences.reset() />
 
 	<#else>
 		&nbsp;
@@ -95,14 +90,9 @@ This file allows you to override and define new FreeMarker variables.
 
 <#macro includePortlet portlet_id instance_id>
 
-	<#assign VOID = freeMarkerPortletPreferences.reset() />
-	<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />
-
 	<@liferay_portlet["runtime"]
-			defaultPreferences = "${freeMarkerPortletPreferences}"
+			defaultPreferences = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")
 			instanceId = instance_id
 			portletName = portlet_id
 	/>
-
-	<#assign VOID = freeMarkerPortletPreferences.reset() />
 </#macro>

@@ -1,3 +1,15 @@
+<#assign searchbar_portlet_id = "com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet" />
+
+<#assign searchbar_instance_id = "search_bar_vgrintra" />
+<#assign searchbar_instance_id = searchbar_instance_id?substring(0, 12) />
+
+<@includePortlet portlet_id=searchbar_portlet_id instance_id=searchbar_instance_id />
+
+<#--
+<@liferay.search default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone") />
+-->
+
+<#--
 <form method="get" action="${search_url}">
 
 	<input class="field" id="p_p_id" name="p_p_id" type="hidden" value="com_liferay_portal_search_web_portlet_SearchPortlet">
@@ -11,6 +23,7 @@
 	<button class="btn btn btn-primary" type="submit"> Sök </button>
 
 </form>
+-->
 
 <#--
 Show search.

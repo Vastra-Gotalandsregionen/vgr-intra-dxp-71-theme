@@ -179,6 +179,10 @@
 // Asset Publisher
 .portlet-asset-publisher {
 
+	.metadata-author {
+		display: none;
+	}
+
 	.portlet-content {
 		.portlet-body {
 			// Same as taglib-header in 6.2

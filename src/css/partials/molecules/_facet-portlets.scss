@@ -1,0 +1,27 @@
+.portlet-site-facet,
+.portlet-type-facet,
+.portlet-tag-facet,
+.portlet-category-facet,
+.portlet-folder-facet,
+.portlet-user-facet,
+.portlet-modified-facet {
+    .portlet {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+
+
+// [class^="portlet"][class$="facet"] {
+//     .panel {
+//         background-color: green;
+//     }
+// }
+
+// [class$="facet"] {
+//     .panel {
+//         background-color: red;
+//     }
+// }

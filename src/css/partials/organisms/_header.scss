@@ -25,6 +25,7 @@
 				float: left;
 				position: relative;
 				text-align: left;
+				margin-top: 0.5rem;
 			}
 
 			img {
@@ -59,7 +60,7 @@
 
 				@include small {
 					display: inline-block;
-					margin: 0;
+					margin: 0.5rem 0 0 0;
 					text-align: left;
 				}
 			}

@@ -4,29 +4,29 @@
   margin: 0;
   padding: 0.7em 0;
 
+  .portlet {
+    background: $vgrintra-mineshaft;
+  }
+
   .portlet-boundary {
     margin: 0;
   }
 
-  .top-alert-article-content {
+  background-image: url(../images/theme/alert/alert-global.png);
+  min-height: 68px;
+  padding-left: 90px;
+  background-position: 24px center;
+  background-repeat: no-repeat;
 
-    background: url(../images/theme/alert/alert-global.png) left center no-repeat;
-    min-height: 68px;
-    padding-left: 90px;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    a,
-    a:visited,
-    a:hover {
-      color: $vgrintra-white;
-    }
-
-
-
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  a:visited,
+  a:hover {
+    color: $vgrintra-white;
   }
 
 }

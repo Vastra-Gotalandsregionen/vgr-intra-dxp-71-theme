@@ -46,7 +46,13 @@ body {
 
 }
 
-html.ie {
+// Word wrap fix for Edge
+pre {
+  word-wrap: normal;
+}
+
+html.ie,
+html.edge {
 	body {
 		@include word-break(keep-all);
 

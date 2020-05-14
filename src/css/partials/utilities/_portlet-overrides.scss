@@ -44,6 +44,7 @@
 		border: none;
 		padding: 0;
 		@include border-radius(2px);
+		@include word-break(break-all);
 
 		.portlet-body {
 			padding: 0;
@@ -51,6 +52,17 @@
 	}
 
 }
+
+html.ie,
+html.edge {
+	.portlet {
+		.portlet-content {
+			@include word-break(keep-all);
+			word-wrap: normal;
+		}
+	}
+}
+
 
 .portlet-borderless-container {
 	min-height: 0;

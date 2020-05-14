@@ -1,0 +1,20 @@
+.custom-admin-controls-open.controls-hidden,
+.custom-admin-controls-closed {
+
+    .portlet-asset-publisher {
+        .component-title {
+            display: none;
+        }
+    }
+
+}
+
+.custom-admin-controls-open.controls-visible {
+
+    .portlet-asset-publisher {
+        .component-title {
+            display: block;
+        }
+    }
+
+}
